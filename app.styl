@@ -1,5 +1,6 @@
-import './normalize.styl'
-*,::after, ::before
+@import './normalize.styl'
+
+*
     box-sizing: border-box
 
 :root
@@ -16,6 +17,8 @@ body
     font-family: 'Libre Franklin', sans-serif
     min-height: 100vh
     text-align: center
+    margin: 0
+    font-size: 1rem
 main
     min-height: 100vh
     display: flex;
@@ -88,7 +91,7 @@ main
         border: 1px solid var(--bluelight-color)
         font-size: 0.75rem
         margin-bottom: 0.625rem
-        padding-left: 2rem
+        padding-left: 1.5rem
         transition: all .2s
         color: var(--black-color)
         &:focus
