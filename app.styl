@@ -89,6 +89,14 @@ main
         font-size: 0.75rem
         margin-bottom: 0.625rem
         padding-left: 2rem
+        transition: all .2s
+        color: var(--black-color)
+        &:focus
+            outline: none
+            box-shadow: 0 0 0 2px rgba(76, 123, 243, .7);
+            // box-shadow: 0 0 0 1px rgba(255, 84, 102, .7);
+            // border: 1px solid rgba(255, 84, 102, .7);
+            // red color error
         @media screen and (min-width: 768px)
             max-width: 321px
         &::placeholder 
@@ -110,7 +118,7 @@ main
         &:hover
             background-color: var(--blueish-color)
             img
-                filter: invert(30%) grayscale(100%) brightness(70%) contrast(4)
+                filter: brightness(360%);
     &__wrapper
         display: flex;
         justify-content: center
@@ -119,5 +127,7 @@ main
     &__copyright
         color: var(--gray-color)
         font-size: 0.625rem
+        @media screen and (min-width:1440px)
+            font-size: 0.75rem
 footer
     margin-bottom: 3rem
