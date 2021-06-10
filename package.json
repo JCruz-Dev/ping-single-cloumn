@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "server": "parcel index.html"
+  },
   "dependencies": {
     "stylus": "^0.54.8"
   },

@@ -27,13 +27,18 @@
                             Subscribe and get notified
                         </h2>
                     </div>
-                    <form class="content__action">
-                        <input
-                            type="email"
-                            placeholder="Your email address…"
-                            class="content__action__input"
-                            required
-                        />
+                    <form class="content__action" id="form">
+                        <div class="input__container">
+                            <input
+                                type="text"
+                                placeholder="Your email address…"
+                                class="content__action__input"
+                                id="input"
+                            />
+                            <p class="hidden" id="message">
+                                Please provide a valid email address
+                            </p>
+                        </div>
                         <button type="submit" class="content__action__button">
                             Notify Me
                         </button>

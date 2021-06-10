@@ -8,10 +8,11 @@
     --black-color: #15202A
     --blueish-color: #4C7BF3
     --bluelight-color: #C2D3FF
+    --error-color: #FF5466
     --light-font: 300
     --semi-font: 600
     --bold-font: 700
-h1,h2,h3,h4,h5,h6
+h1,h2,h3,h4,h5,h6,p
     margin: 0   
 body
     font-family: 'Libre Franklin', sans-serif
@@ -69,6 +70,23 @@ main
         justify-content: center
         flex-direction: row
         column-gap: 1rem
+    .input__container
+        position: relative
+        width: 100%
+        @media screen and (min-width: 768px)
+            max-width: 321px
+        p
+            position: absolute
+            left: 0
+            color: var(--error-color)
+            font-size: 0.75rem
+            font-style: italic
+            margin-top: .5rem
+            margin-left: .5rem
+            &.visible
+                opacity: 1
+            &.hidden
+                opacity: 0 
     &__input, &__button
         border: none
         border-radius: 28px
@@ -81,6 +99,7 @@ main
         font-weight: var(--semi-font)
         color: #fff
         widows 100%
+        font-size: 14px
         box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.230414)
         &:hover
             background: hsla(223, 87,63, .7)
@@ -96,14 +115,8 @@ main
         color: var(--black-color)
         &:focus
             outline: none
-            box-shadow: 0 0 0 2px rgba(76, 123, 243, .7);
-            // box-shadow: 0 0 0 1px rgba(255, 84, 102, .7);
-            // border: 1px solid rgba(255, 84, 102, .7);
-            // red color error
-        @media screen and (min-width: 768px)
-            max-width: 321px
         &::placeholder 
-            color: var(--bluelight-color)
+            color: var(--blueish-color)
             font-weight: var(--light-font)
         @media screen and (min-width: 768px)
             margin-bottom: 0
