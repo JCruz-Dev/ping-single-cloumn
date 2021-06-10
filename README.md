@@ -1,7 +1,7 @@
-<img src="./Desktop.jpg">
+<img src="./Desktop.jpg" style="width:100px; height:100px;">
 <br/>
-# ping-single-cloumn
-Frontend Mentor Challenge
+
+# Frontend Mentor Challenge - Ping Single Column Coming soon
 
 - Stack: 
   - HTML
