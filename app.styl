@@ -35,8 +35,12 @@ main
 
 .logo 
     margin-bottom: 2rem
+    @media screen and (min-width: 768px)
+        margin-bottom: 2.5rem
     img
         width: 56px
+        @media screen and (min-width: 768px)
+            width: 90px
 
 .main__image
     margin-bottom: 4.5rem
@@ -90,7 +94,7 @@ main
     &__input, &__button
         border: none
         border-radius: 28px
-        padding: .9rem 0 
+        padding: 1rem 0 
         width:100%
     &__button
         cursor: pointer
