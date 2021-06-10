@@ -3,4 +3,7 @@
 # ping-single-cloumn
 Frontend Mentor Challenge
 
-- Tech: HTML/CSS(stylus)/Typescript
+- Stack: 
+  - HTML
+  - CSS (Stylus)
+  - JS (Typescript)
