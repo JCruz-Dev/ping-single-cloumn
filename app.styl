@@ -1,0 +1,123 @@
+import './normalize.styl'
+*,::after, ::before
+    box-sizing: border-box
+
+:root
+    --gray-color: #969696
+    --black-color: #15202A
+    --blueish-color: #4C7BF3
+    --bluelight-color: #C2D3FF
+    --light-font: 300
+    --semi-font: 600
+    --bold-font: 700
+h1,h2,h3,h4,h5,h6
+    margin: 0   
+body
+    font-family: 'Libre Franklin', sans-serif
+    min-height: 100vh
+    text-align: center
+main
+    min-height: 100vh
+    display: flex;
+    flex-direction: column
+.container
+    padding-left: 1rem
+    padding-right: 1rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin-top: 5rem
+
+.logo 
+    margin-bottom: 2rem
+    img
+        width: 56px
+
+.main__image
+    margin-bottom: 4.5rem
+    img
+        width: 100%
+.content
+    width: 100%
+.content__heading
+    color: var(--black-color)
+    margin-bottom: 2rem;
+    &__title
+        font-size: 1.375rem;
+        color: var(--gray-color)
+        font-weight: var(--light-font)
+        margin-bottom: 1rem
+        span
+            color: var(--black-color)
+            font-weight: var(--bold-font)
+        @media screen and (min-width: 768px)
+            font-size: 48px
+    &__subtitle
+        font-size: 0.75rem
+        font-weight: var(--light-font)
+        @media screen and (min-width: 768px)
+            font-size: 20px
+.content__action
+    margin-bottom: 4.5rem
+    display: flex;
+    flex-direction: column
+    @media screen and (min-width: 768px)
+        justify-content: center
+        flex-direction: row
+        column-gap: 1rem
+    &__input, &__button
+        border: none
+        border-radius: 28px
+        padding: .9rem 0 
+        width:100%
+    &__button
+        cursor: pointer
+        width: 100%
+        background: var(--blueish-color);
+        font-weight: var(--semi-font)
+        color: #fff
+        widows 100%
+        box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.230414)
+        &:hover
+            background: hsla(223, 87,63, .7)
+        @media screen and (min-width: 768px)
+            max-width: 150px
+    &__input
+        width: 100%
+        border: 1px solid var(--bluelight-color)
+        font-size: 0.75rem
+        margin-bottom: 0.625rem
+        padding-left: 2rem
+        @media screen and (min-width: 768px)
+            max-width: 321px
+        &::placeholder 
+            color: var(--bluelight-color)
+            font-weight: var(--light-font)
+        @media screen and (min-width: 768px)
+            margin-bottom: 0
+.social
+    margin-top: 1rem
+    &__icon
+        border: 1px solid var(--bluelight-color)
+        border-radius: 50%
+        width: 32px
+        height: 32px
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        &:hover
+            background-color: var(--blueish-color)
+            img
+                filter: invert(30%) grayscale(100%) brightness(70%) contrast(4)
+    &__wrapper
+        display: flex;
+        justify-content: center
+        column-gap: 0.7319rem
+        margin-bottom: 1.69rem
+    &__copyright
+        color: var(--gray-color)
+        font-size: 0.625rem
+footer
+    margin-bottom: 3rem
