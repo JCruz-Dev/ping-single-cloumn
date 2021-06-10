@@ -38,7 +38,6 @@ input.addEventListener('focus', function () {
 input.addEventListener('blur', function () {
     if (input.value === '' && focusType === 'INVALID') {
         this.style.boxShadow = boxShadowError;
-        focusType = 'INVALID';
         makeErrorVisible();
     } else if (input.value !== '' && focusType === 'VALID') {
         this.style.boxShadow = resetBoxShadow;
