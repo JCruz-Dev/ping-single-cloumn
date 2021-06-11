@@ -31,12 +31,12 @@ main
     flex-direction: column
     align-items: center
     justify-content: center
-    margin-top: 5rem
+    margin-top: 5.2rem
 
 .logo 
-    margin-bottom: 2rem
+    margin-bottom: 2.8rem
     @media screen and (min-width: 768px)
-        margin-bottom: 2.5rem
+        margin-bottom: 2.8rem
     img
         width: 56px
         @media screen and (min-width: 768px)
@@ -46,16 +46,18 @@ main
     margin-bottom: 4.5rem
     img
         width: 100%
+        @media screen and (min-width: 1024px)
+            width: 640px
+            height: 383px
 .content
     width: 100%
 .content__heading
     color: var(--black-color)
-    margin-bottom: 2rem;
     &__title
         font-size: 1.375rem;
         color: var(--gray-color)
         font-weight: var(--light-font)
-        margin-bottom: 1rem
+        margin-bottom: 2rem
         span
             color: var(--black-color)
             font-weight: var(--bold-font)
@@ -67,7 +69,7 @@ main
         @media screen and (min-width: 768px)
             font-size: 20px
 .content__action
-    margin-bottom: 4.5rem
+    margin-bottom: 7rem
     display: flex;
     flex-direction: column
     @media screen and (min-width: 768px)
@@ -78,7 +80,7 @@ main
         position: relative
         width: 100%
         @media screen and (min-width: 768px)
-            max-width: 321px
+            max-width: 421px
         p
             position: absolute
             left: 0
@@ -94,7 +96,7 @@ main
     &__input, &__button
         border: none
         border-radius: 28px
-        padding: 1rem 0 
+        padding: 1.5rem 0 
         width:100%
     &__button
         cursor: pointer
@@ -102,13 +104,12 @@ main
         background: var(--blueish-color);
         font-weight: var(--semi-font)
         color: #fff
-        widows 100%
         font-size: 14px
         box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.230414)
         &:hover
             background: hsla(223, 87,63, .7)
         @media screen and (min-width: 768px)
-            max-width: 150px
+            max-width: 200px
     &__input
         width: 100%
         border: 1px solid var(--bluelight-color)
